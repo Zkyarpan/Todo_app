@@ -30,6 +30,9 @@ const Todo = () => {
           return currElem;
         })
       );
+      setINputData("");
+      setIsEditItem(null);
+      setToggleButton(false);
     } else {
       const myNewInputData = {
         id: new Date().getTime().toString(),
